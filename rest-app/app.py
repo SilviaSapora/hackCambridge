@@ -1,12 +1,15 @@
 from flask import Flask, request
 from flask_restful import Resource, Api
-from sqlalchemy import create_engine
 from json import dumps
 from flask import send_file
 
 
 app = Flask(__name__)
 api = Api(app)
+
+@app.route('/')
+def index():
+    return "Yo, it's working!"
 
 class Objects(Resource):
     def get(self):
