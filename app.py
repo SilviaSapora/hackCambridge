@@ -23,7 +23,7 @@ class Objects(Resource):
 
 class Picture(Resource):
     def get(self, obj_id):
-        filename = "image" + obj_id + ".jpg"
+        filename = obj_id + ".jpg"
         return send_file(filename, mimetype='image')
 
 @app.route('/new_object/<string:obj_id>/<string:obj_prediction>/<string:obj_date>/<string:obj_exp>')
