@@ -13,7 +13,7 @@ def index():
 
 class Objects(Resource):
     def get(self):
-        with open('../objects.txt', 'r') as myfile:
+        with open('obj.txt', 'r') as myfile:
             data = myfile.read()
         print(data)
 
