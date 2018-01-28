@@ -16,6 +16,7 @@ def api(image):
         'projectId': '34a4628f-9ab4-4732-8db0-9116ff433aa5'
         })
 
+    return image
     #with open("keypic.jpg", "rb") as imageFile:
         #f = imageFile.read()
         #body = bytearray(f)
