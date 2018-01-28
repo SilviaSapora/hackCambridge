@@ -16,7 +16,7 @@ def index():
 @app.route('/picture', methods=['GET', 'POST'])
 def API():
     #print(image)
-    return request.getData()        
+    return request.get_data()        
 
 
 if __name__ == '__main__':
