@@ -16,12 +16,11 @@ def api(image):
         'projectId': '34a4628f-9ab4-4732-8db0-9116ff433aa5'
         })
 
-    return image
     #with open("keypic.jpg", "rb") as imageFile:
         #f = imageFile.read()
         #body = bytearray(f)
 
-        body = image
+    body = image
         #body = "{'url':'https://i2.wp.com/www.peanutbutterlist.com/wp-content/uploads/2015/02/groceries.jpg?fit=1000%2C508'}"
 
     try:
