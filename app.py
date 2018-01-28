@@ -18,7 +18,6 @@ def API():
     #print(image)
     return request.getData()        
 
-api.add_resource(Picture, '/picture/<string:image>')
 
 if __name__ == '__main__':
      app.run()
