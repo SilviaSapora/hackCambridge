@@ -11,8 +11,6 @@ def api(image):
         'Prediction-key': '7a3c2853276a42abb5bb9c709433ec3d',
     }
 
-    return image
-
     pre_params = urllib.urlencode({
         # Request parameters
         'projectId': '34a4628f-9ab4-4732-8db0-9116ff433aa5'
@@ -22,6 +20,7 @@ def api(image):
         #f = imageFile.read()
         #body = bytearray(f)
 
+        body = image
         #body = "{'url':'https://i2.wp.com/www.peanutbutterlist.com/wp-content/uploads/2015/02/groceries.jpg?fit=1000%2C508'}"
 
     try:
