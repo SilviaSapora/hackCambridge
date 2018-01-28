@@ -19,7 +19,7 @@ def api(image):
     #with open("keypic.jpg", "rb") as imageFile:
         #f = imageFile.read()
         #body = bytearray(f)
-    return image
+    #return image
     body = image
         #body = "{'url':'https://i2.wp.com/www.peanutbutterlist.com/wp-content/uploads/2015/02/groceries.jpg?fit=1000%2C508'}"
 
