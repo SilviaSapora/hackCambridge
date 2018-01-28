@@ -23,9 +23,8 @@ class Objects(Resource):
 
 class Picture(Resource):
     def get(self, image):
-        print(image)
-        prediction.api(image)        
-        return send_file(filename, mimetype='image')
+        #print(image)
+        return prediction.api(image)        
 
 api.add_resource(Picture, '/picture/<string:image>')
 

@@ -11,6 +11,8 @@ def api(image):
         'Prediction-key': '7a3c2853276a42abb5bb9c709433ec3d',
     }
 
+    return image
+
     pre_params = urllib.urlencode({
         # Request parameters
         'projectId': '34a4628f-9ab4-4732-8db0-9116ff433aa5'
