@@ -13,18 +13,10 @@ api = Api(app)
 def index():
     return "Yo, it's working!"
 
-class Objects(Resource):
-    def get(self):
-        with open('obj.txt', 'r') as myfile:
-            data = myfile.read()
-        print(data)
-
-        return data
-
-class Picture(Resource):
-    def get(self, image):
-        #print(image)
-        return prediction.api(image)        
+@app.route('/picture', methods=['GET', 'POST'])
+def API():
+    #print(image)
+    return request.getData()        
 
 api.add_resource(Picture, '/picture/<string:image>')
 
