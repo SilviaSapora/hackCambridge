@@ -35,20 +35,20 @@ def api(image):
     except Exception as e:
         print("[Errno {0}] {1}".format(e.errno, e.strerror))
 
-        pre_json_data = json.loads(pre_data)
-        obj_prediction = pre_json_data["Predictions"][0]["Tag"]
-        obj_id = pre_json_data["Id"]
-        obj_date = pre_json_data["Created"]
+    pre_json_data = json.loads(pre_data)
+    obj_prediction = pre_json_data["Predictions"][0]["Tag"]
+    obj_id = pre_json_data["Id"]
+    obj_date = pre_json_data["Created"]
 
-        app_data = {}
-        app_data['obj_prediction'] = obj_prediction
-        app_data['obj_date'] = obj_date
-        app_data['obj_id'] = obj_id
-        json_data = json.dumps(app_data)
+    app_data = {}
+    app_data['obj_prediction'] = obj_prediction
+    app_data['obj_date'] = obj_date
+    app_data['obj_id'] = obj_id
+    json_data = json.dumps(app_data)
 
-        #webbrowser.open('https://fierce-gorge-21914.herokuapp.com/new_object/'+ obj_id + "/" + obj_prediction + "/" + obj_date + "/0")
+    #webbrowser.open('https://fierce-gorge-21914.herokuapp.com/new_object/'+ obj_id + "/" + obj_prediction + "/" + obj_date + "/0")
 
-        print("JSON-DATA")
-        print(json_data)
-        return json_data
+    print("JSON-DATA")
+    print(json_data)
+    return json_data
 
